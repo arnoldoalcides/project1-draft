@@ -6,10 +6,9 @@ constexpr uint8_t  MOTOR_B_PIN = 14;
 
 void motorInit(){
     pinMode(MOTOR_A_PIN, OUTPUT);
-    digitalWrite(MOTOR_A_PIN, LOW);
-
     pinMode(MOTOR_B_PIN, OUTPUT);
-    digitalWrite(MOTOR_B_PIN, LOW);
+    motorStop();
+
 };
 void motorPWM(uint32_t cicloTrabajo){
     if(cicloTrabajo > 255){

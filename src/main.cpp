@@ -26,13 +26,19 @@
 
 //FSM 
 
-// fsm start
-// fsm fallas
-// fsm reset 
+// fsm start funcion
+// fsm fault  funcion
+// fsm reset funcion
 // matriz de transiciones
 
 void setup() {
-  // put your setup code here, to run once:
+  // serial 115200
+  motorInit();
+  //mutex 
+  //semaphore
+  //interrupt
+  //task
+
 }
 
 void loop() {
